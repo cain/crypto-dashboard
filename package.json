@@ -16,9 +16,13 @@
     "buefy": "^0.6.2",
     "cross-env": "^5.0.1",
     "express": "^4.15.3",
+    "install": "^0.10.2",
+    "net": "^1.0.2",
     "node-bittrex-api": "^0.8.1",
     "nuxt": "^1.0.0-rc3",
+    "socket.io": "^2.0.4",
     "source-map-support": "^0.4.15",
+    "tls": "^0.0.1",
     "vue": "2.4.2"
   },
   "devDependencies": {

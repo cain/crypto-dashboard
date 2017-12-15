@@ -16,28 +16,36 @@ const users = [
 
 /* GET users listing. */
 router.get('/users', function (req, res, next) {
-  bittrex.getmarketsummaries(function (data, err) {
-    if (err) {
-      return console.error(err)
-    }
-    // for (var i in data.result) {
-    //   bittrex.getticker({ market: data.result[i].MarketName }, function (ticker) {
-    //     console.log(ticker)
-    //   })
-    // }
+  // bittrex.getmarketsummaries(function (data, err) {
+  //   if (err) {
+  //     return console.error(err)
+  //   }
+  //   // for (var i in data.result) {
+  //   //   bittrex.getticker({ market: data.result[i].MarketName }, function (ticker) {
+  //   //     console.log(ticker)
+  //   //   })
+  //   // }
+  //
+  //   const currencies = {
+  //     'USDT-BTC': { name: 'BTC' },
+  //     'BTC-ETH': { name: 'BTC' },
+  //     'BTC-XRP': { name: 'BTC' },
+  //     'BTC-LTC': { name: 'BTC' },
+  //     'BTC-DASH': { name: 'BTC' },
+  //     'BTC-ADA': { name: 'BTC' },
+  //     'BTC-BTG': { name: 'BTC' },
+  //     'BTC-XMR': { name: 'BTC' }
+  //   }
+  //   res.json(data.result.filter(x => Object.keys(currencies).includes(x.MarketName)))
+  // })
 
-    const currencies = {
-      'USDT-BTC': { name: 'BTC' },
-      'USDT-ETH': { name: 'BTC' },
-      'USDT-XRP': { name: 'BTC' },
-      'USDT-LTC': { name: 'BTC' },
-      'USDT-DASH': { name: 'BTC' },
-      'BTC-ADA': { name: 'BTC' },
-      'USDT-BTG': { name: 'BTC' },
-      'USDT-XMR': { name: 'BTC' }
-    }
-    res.json(data.result.filter(x => Object.keys(currencies).includes(x.MarketName)))
-  })
+  // bittrex.websockets.subscribe(['BTC-ETH', 'BTC-XMR', 'BTC-DASH'], function (data, client) {
+  //   if (data.M === 'updateExchangeState') {
+  //     data.A.forEach(function (dataFor) {
+  //       console.log('Market Update for ' + dataFor.MarketName, dataFor)
+  //     })
+  //   }
+  // })
 })
 
 /* GET user by ID. */
