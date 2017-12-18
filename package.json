@@ -25,7 +25,8 @@
     "source-map-support": "^0.4.15",
     "tls": "^0.0.1",
     "vue": "2.4.2",
-    "vue-chartjs": "^3.0.2"
+    "vue-chartjs": "^3.0.2",
+    "vuetrend": "^0.2.3"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",

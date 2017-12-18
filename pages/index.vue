@@ -7,9 +7,9 @@
             <p>Get the latest crypto prices straight from <code>bittrex</code> api.</p>
           </div>
         </div>
-        <div class="columns is-multiline is-mobile">
+        <div class="columns is-multiline is-desktop">
           <div class="column is-one-quarter" v-for="currency in markets.slice(0, 20)"  :key="currency.MarketName">
-            <crypto-item message="hello!" :currency="currency" />
+            <crypto-item :btcPrice="btcPrice" :currency="currency" />
           </div>
         </div>
       </div>
@@ -31,6 +31,11 @@ export default {
   head () {
     return {
       title: 'Markets'
+    }
+  },
+  computed: {
+    btcPrice: function () {
+      return this.markets.find(x => x.MarketName === 'USDT-BTC').Last
     }
   }
 }

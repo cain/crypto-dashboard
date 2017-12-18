@@ -5525,6 +5525,10 @@ vue@^2.5.2:
   version "2.5.11"
   resolved "http://nexus.ni.news.com.au/nexus/content/groups/tangram-npm-all/vue/-/vue-2.5.11.tgz#80ca2657aa81f03545cd8dd5a2f55454641e6405"
 
+vuetrend@^0.2.3:
+  version "0.2.3"
+  resolved "http://nexus.ni.news.com.au/nexus/content/groups/tangram-npm-all/vuetrend/-/vuetrend-0.2.3.tgz#cb8412709af089d89c1b507037355dd63b269389"
+
 vuex@^2.3.1:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/vuex/-/vuex-2.3.1.tgz#cde8e997c1f9957719bc7dea154f9aa691d981a6"
