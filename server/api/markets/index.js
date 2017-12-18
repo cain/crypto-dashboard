@@ -1,10 +1,10 @@
 import { Router } from 'express'
 
-import markets from './markets'
+import bittrex from './bittrex'
 
 const router = Router()
 
 // Add USERS Routes
-router.use('/markets', markets)
+router.use('/bittrex', bittrex)
 
 export default router
